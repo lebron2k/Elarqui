@@ -282,7 +282,7 @@ function Ventas() {
                     <input name="guardar" className="btn-guardarf" type="button" value="Guardar" onClick={handleGuardar} />
                     <input name="cancelar" className="btn-cancelarf" type="button" value="Cancelar" onClick={() => setMostrarFormulario(false)} />
                 </div>
-            ) : (
+            ) : ventaDetalle ? null : (
                 <section className="wrapper ventas-tabla">
                     <div className="filtros-venta">
                        
