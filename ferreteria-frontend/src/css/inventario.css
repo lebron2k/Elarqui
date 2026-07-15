@@ -1,0 +1,25 @@
+#inventario-table .row ul {
+    grid-template-columns:
+        80px   /* ID */
+        1fr    /* Producto */
+        130px  /* Stock mínimo */
+        130px  /* Stock actual */
+        100px; /* Acciones */
+}
+
+#inventario-table{
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+#buscarP1 {
+    padding: 10px;
+    margin-left: 80px;
+    border-radius: 6px;
+}

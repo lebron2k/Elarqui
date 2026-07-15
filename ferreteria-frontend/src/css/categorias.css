@@ -1,0 +1,22 @@
+#categoria-table .row ul {
+    grid-template-columns:
+        100px   /* ID */
+        200px    /* Producto */
+       
+        200px; /* Acciones */
+}
+
+#categoria-table{
+    width: 50%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+#agregar-btnn{
+    margin-left: 265px;
+}

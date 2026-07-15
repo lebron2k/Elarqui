@@ -1,0 +1,26 @@
+#cliente-table .row ul {
+  display: grid;
+  grid-template-columns: 
+    100px   /* código */
+    250px   /* nombre */
+    250px   /* dirección */
+    120px   /* NIT */
+    120px /* NRC */
+    150px;  /* Acciones */
+}
+
+#cliente-table{
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+ 
+}
+
+#agregar-btnnn{
+  margin-left: 25px;
+}

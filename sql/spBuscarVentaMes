@@ -1,0 +1,26 @@
+CREATE PROCEDURE sp_LibroVentas
+    @mes  INT,
+    @anio INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        v.idVenta,
+        v.correlativo,
+        v.fecha,
+        v.subtotal,
+        v.iva,
+        v.total,
+        v.estado,
+        ISNULL(c.nombre, 'Consumidor Final') AS cliente,
+        td.nombre                            AS tipoDocumento,
+        u.nombre                             AS cajero
+    FROM Venta v
+    LEFT JOIN Cliente        c  ON v.idCliente       = c.idCliente
+    INNER JOIN TipoDocumento td ON v.idTipoDocumento  = td.idTipoDocumento
+    INNER JOIN Usuario       u  ON v.idUsuario        = u.idUsuario
+    WHERE MONTH(v.fecha) = @mes
+    AND   YEAR(v.fecha)  = @anio
+    ORDER BY v.fecha DESC
+END

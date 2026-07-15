@@ -1,0 +1,87 @@
+.detalle-linea {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin-top: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detalle-linea label {
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+.detalle-linea input,
+.detalle-linea select {
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .138);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.detalle-linea select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #4b4d4f !important;
+    color: white !important;
+}
+
+.detalle-linea .btn-eliminar {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.small-info {
+    color: #94a3b8;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Tabla de ventas: 6 columnas (ID, Cliente, Fecha, Total, Estado, Acción) */
+.ventas-tabla .row ul {
+    grid-template-columns: 60px 1fr 120px 100px 100px 90px;
+}
+
+/* Tabla de detalle de venta: 4 columnas */
+.detalle-venta-tabla ul {
+    grid-template-columns: 1fr 100px 100px 140px;
+}
+
+.filtros-venta {
+    display: flex;
+    gap: 10px;
+}
+
+.filtros-venta .agregar-btnn {
+    margin-left: 0;
+}
+
+.filtros-venta .activo {
+    background: rgba(21, 56, 102, 0.9);
+    color: rgb(240, 224, 224);
+}
+
+.detalle-venta {
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.detalle-venta h3 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.detalle-venta p {
+    color: #cbd5e1;
+    margin: 4px 0;
+}
+
+#filtro-todas{
+    margin-top: 8px;
+    margin-left: 8px;
+}

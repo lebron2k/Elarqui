@@ -1,0 +1,9 @@
+CREATE VIEW vw_StockBajo AS
+SELECT 
+    p.idProducto,
+    p.nombre    AS producto,
+    i.stockActual,
+    i.stockMinimo
+FROM Producto p
+INNER JOIN Inventario i ON p.idProducto = i.idProducto
+WHERE i.stockActual <= i.stockMinimo

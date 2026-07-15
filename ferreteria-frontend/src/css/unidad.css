@@ -1,0 +1,20 @@
+#unidad-table{width: 70%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;}
+
+    #unidad-table .row ul {
+    grid-template-columns:
+        100px   /* ID */
+        200px    /* Producto */
+       200px
+        200px; /* Acciones */
+}
+
+#agregar-btn{
+    margin-left: 160px;
+}

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElArqui.API", "ElArqui.API.csproj", "{B1258DE7-55A9-0F09-BAB4-2C0FD9274CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1258DE7-55A9-0F09-BAB4-2C0FD9274CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1258DE7-55A9-0F09-BAB4-2C0FD9274CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1258DE7-55A9-0F09-BAB4-2C0FD9274CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1258DE7-55A9-0F09-BAB4-2C0FD9274CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC6CC66A-43F4-4675-9167-68D8C4014524}
+	EndGlobalSection
+EndGlobal

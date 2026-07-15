@@ -1,0 +1,68 @@
+.detalle-linea {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin-top: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detalle-linea label {
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+.detalle-linea input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+.detalle-linea input,
+.detalle-linea select {
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .138);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.detalle-linea select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #4b4d4f !important;
+    color: white !important;
+}
+
+.detalle-linea .btn-eliminar {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+/* Tabla de compras y de detalle: 4 columnas en vez de las 10 de productos */
+.compras-tabla .row ul,
+.detalle-compra-tabla ul {
+    grid-template-columns: 80px 1fr 140px 120px;
+}
+
+/* Tabla de proveedores: 5 columnas */
+.proveedores-tabla .row ul {
+    grid-template-columns: 80px 1fr 140px 140px 100px;
+}
+
+.detalle-compra {
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.detalle-compra h3 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.detalle-compra p {
+    color: #cbd5e1;
+    margin: 4px 0;
+}

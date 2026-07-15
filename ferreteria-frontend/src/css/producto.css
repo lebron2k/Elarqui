@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    background: rgba(0,0,0,0.9);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* Wrapper */
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+/* Lists */
+
+.row ul {
+    margin: 0;
+    padding: 0;
+}
+
+.row ul li {
+    margin: 0;
+    list-style: none;
+   
+   
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.title ul li {
+    padding: 10px 10px;
+}
+
+.row ul {
+    display: grid;
+    grid-template-columns:
+        80px      /* ID */
+        100px     /* Código */
+        140px       /* Nombre */
+        140px     /* Categoría */
+        100px     /* Unidad */
+        100px     /* Precio */
+        80px      /* IVA */
+        80px      /* Activo */
+        80px
+        80px;  
+    align-items: center;
+    text-align: center;
+}
+
+
+.row {
+    padding: 15px 0;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    
+}
+
+.row:hover {
+    background: rgba(21, 56, 102, 0.9);
+    height: 65px;
+}
+
+.title {
+    padding: 25px 0 5px 0;
+    height: 45px;
+    background: rgba(255,255,255,.1);
+    border-left: 3px solid white;
+}
+
+.title:hover {
+    height: 45px;
+}
+
+
+
+
+.more-content li {
+    position: relative;
+    top: 22px;
+    font-size: 13px;
+   
+    display: block;
+    width: 100%;
+    color: rgba(180,180,180,.8);
+}
+
+/* Small */
+
+.small {
+    color: rgba(140,140,140,.8);
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+/* Animations */
+
+.row-fadeIn-wrapper {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    animation: fadeIn .4s ease-out 2s forwards;
+}
+
+.row-fadeOut-wrapper {
+    opacity: 1;
+    height: 65px;
+    overflow: hidden;
+    animation: fadeOut .4s ease-out 8s forwards;
+}
+
+.update-row {
+    animation: update .5s ease-out 12s;
+}
+
+.update1 {
+    position: absolute;
+    top: 25px;
+    animation: update1 1s ease-out 12s forwards;
+}
+
+.update2 {
+    position: absolute;
+    top: 25px;
+    opacity: 0;
+    animation: update2 4s ease-out 13s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 65px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        height: 65px;
+    }
+    to {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+@keyframes update {
+    0% { background: rgba(50,50,50,.9); }
+    50% { background: rgba(255,255,255,.1); }
+    100% { background: rgba(50,50,50,.9); }
+}
+
+@keyframes update1 {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes update2 {
+    0% { opacity: 0; }
+    20% { opacity: 1; color: rgba(82,210,154,1); }
+    100% { opacity: 1; color: white; }
+}
+
+.form-producto {
+    background: rgba(255,255,255,.1);
+    border-radius: 4px;
+    padding: 25px;
+    margin: 20px 0;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+      margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.form-producto h3 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 22px;
+}
+
+.form-producto label {
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+.form-producto input,
+.form-producto select {
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.138);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: .3s;
+}
+
+.form-producto input:focus,
+.form-producto select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(36, 36, 80, 0.2);
+}
+.form-producto select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #4b4d4f !important;
+    color: white !important;
+    
+}
+
+.acciones-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-guardar,
+.btn-cancelar {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+
+
+.btn-guardar:hover {
+    background: #4f46e5;
+}
+
+
+
+.btn-cancelar:hover {
+    background: #dc2626 ;
+}
+
+.btn-editar,
+.btn-eliminar {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+    
+    
+
+}
+
+/* Editar */
+.btn-editar {
+    background:rgba(255,255,255,.1);
+    color: white;
+    margin-right: 5px;
+    
+}
+
+.btn-editar:hover {
+    background: #c6c81b;
+    transform: translateY(-2px);
+}
+
+/* Eliminar */
+.btn-eliminar {
+    background: rgba(255,255,255,.1);
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #bc1b1b;
+    transform: translateY(-2px);
+}
+
+.btn-editar:disabled,
+.btn-eliminar:disabled {
+    background: rgba(255,255,255,.05);
+    color: rgba(255,255,255,.5);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.agregar-btnn {
+    background: #fdfffe;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.agregar-btnn:hover {
+    background:rgba(21, 56, 102, 0.9);
+    color:rgb(240, 224, 224);
+}
+
+.btn-guardarf:hover {
+    background: #557ed0;
+}
+.btn-cancelarf:hover {
+    background: #e11d48;
+}
+
+.label-buscarP{
+    color: #cbd5e1;
+    
+    margin-left: 20px;
+}
+
+#buscarP,#label-buscarP
+     {
+   padding: 10px;
+    margin-left: 12px;
+    
+    border-radius: 6px;
+}
+
+.buscarCat {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+   background: #fdfffe;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+   
+}
+.buscarCat:hover {
+    background:rgba(21, 56, 102, 0.9);
+    color:rgb(240, 224, 224);
+}
