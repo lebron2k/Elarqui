@@ -12,7 +12,7 @@ function Login()
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate(); //para cambiar pantalla
-    const BASE_URL="elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net";
+    const BASE_URL="elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net/api";
     const handleLogin = async () =>
     {
         setLoading(true);
