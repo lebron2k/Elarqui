@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4UKlFTGeUPg=",
+  "dgSpecHash": "/guLdIr8y0s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bryan\\OneDrive\\Documentos\\React\\elArqui\\ElArqui.API\\ElArqui.API.csproj",
+  "projectFilePath": "C:\\Users\\bryan\\OneDrive\\Documentos\\React\\deployment\\Elarqui\\ElArqui.API\\ElArqui.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bryan\\.nuget\\packages\\azure.core\\1.52.0\\azure.core.1.52.0.nupkg.sha512",
     "C:\\Users\\bryan\\.nuget\\packages\\azure.identity\\1.20.0\\azure.identity.1.20.0.nupkg.sha512",

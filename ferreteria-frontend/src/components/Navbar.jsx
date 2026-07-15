@@ -1,7 +1,7 @@
 import "../css/navbar.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Receipt, ShoppingCart, Package, ClipboardList, Tag, Ruler, LogOut,Users } from "lucide-react";
+import { Receipt, ShoppingCart, Package, ClipboardList, Tag, Ruler, LogOut, Users, Menu, X } from "lucide-react";
 
 const iconColor = "rgba(109, 161, 228, 0.9)";
 
@@ -20,14 +20,27 @@ function Navbar() {
     const [principalOpen, setPrincipalOpen] = useState(true);
     const [catalogoOpen, setCatalogoOpen] = useState(true);
     const [adminOpen, setAdminOpen] = useState(true);
+    const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleLogout = () => {
         localStorage.removeItem("token");
         navigate("/login");
     };
 
+    const irA = (ruta) => {
+        navigate(ruta);
+        setMobileOpen(false);
+    };
+
     return (
-        <aside className="sidebar">
+        <>
+            <button className="navbar-toggle" onClick={() => setMobileOpen(!mobileOpen)}>
+                {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+
+            {mobileOpen && <div className="sidebar-overlay" onClick={() => setMobileOpen(false)}></div>}
+
+            <aside className={mobileOpen ? "sidebar open" : "sidebar"}>
             <div className="sidebar-logo">
                 <h2>El Arqui</h2>
                 <p>{rol}</p>
@@ -45,14 +58,14 @@ function Navbar() {
                     <div className="sidebar-links">
                         <button
                             className={location.pathname === "/ventas" ? "active" : ""}
-                            onClick={() => navigate("/ventas")}
+                            onClick={() => irA("/ventas")}
                         >
                             <Receipt size={20} color={iconColor} /> Ventas
                         </button>
 
                         <button
                             className={location.pathname === "/compras" ? "active" : ""}
-                            onClick={() => navigate("/compras")}
+                            onClick={() => irA("/compras")}
                         >
                             <ShoppingCart size={20} color={iconColor} /> Compras
                         </button>
@@ -72,14 +85,14 @@ function Navbar() {
                     <div className="sidebar-links">
                         <button
                             className={location.pathname === "/productos" ? "active" : ""}
-                            onClick={() => navigate("/productos")}
+                            onClick={() => irA("/productos")}
                         >
                             <Package size={20} color={iconColor} /> Productos
                         </button>
 
                         <button
                             className={location.pathname === "/inventario" ? "active" : ""}
-                            onClick={() => navigate("/inventario")}
+                            onClick={() => irA("/inventario")}
                         >
                             <ClipboardList size={20} color={iconColor} /> Inventario
                         </button>
@@ -100,21 +113,21 @@ function Navbar() {
                         <div className="sidebar-links">
                             <button
                                 className={location.pathname === "/categorias" ? "active" : ""}
-                                onClick={() => navigate("/categorias")}
+                                onClick={() => irA("/categorias")}
                             >
                                 <Tag size={20} color={iconColor} /> Categorías
                             </button>
 
                             <button
                                 className={location.pathname === "/unidades" ? "active" : ""}
-                                onClick={() => navigate("/unidades")}
+                                onClick={() => irA("/unidades")}
                             >
                                 <Ruler size={20} color={iconColor} /> Unidades de Medida
                             </button>
 
                              <button
                                 className={location.pathname === "/clientes" ? "active" : ""}
-                                onClick={() => navigate("/clientes")}
+                                onClick={() => irA("/clientes")}
                             >
                                 <Users size={20} color={iconColor} /> Clientes
                             </button>
@@ -129,7 +142,8 @@ function Navbar() {
             >
                 <LogOut size={18} color={iconColor} /> Cerrar sesión
             </button>
-        </aside>
+            </aside>
+        </>
     );
 }
 

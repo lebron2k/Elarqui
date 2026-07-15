@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElArqui.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc8f774d0e0a43e44f5a5973abe4ff4caaae539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc3db60ce3d728658d533e4afdf1e04beca95101")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElArqui.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElArqui.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
