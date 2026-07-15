@@ -12,13 +12,13 @@ function Login()
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate(); //para cambiar pantalla
-    const BASE_URL="elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net";
+    const BASE_URL = "https://elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net";
     const handleLogin = async () =>
     {
         setLoading(true);
         setError("");
 
-        const res = await fetch(`${BASE_URL}api/auth/login`, {
+        const res = await fetch(`${BASE_URL}/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
