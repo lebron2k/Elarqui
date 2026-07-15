@@ -1,6 +1,6 @@
 import {useState} from "react";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../services/api";
+
 import "../css/login.css";
 
 function Login()
@@ -12,7 +12,7 @@ function Login()
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate(); //para cambiar pantalla
-
+    const BASE_URL="elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net";
     const handleLogin = async () =>
     {
         setLoading(true);
