@@ -1,4 +1,5 @@
-const BASE_URL = "elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net";
+const BASE_URL = "https://elarqui-api-h9d9aed5ggfrdpe8.centralus-01.azurewebsites.net/api";
+
 
 function getHeaders() {
   const token = localStorage.getItem("token");
