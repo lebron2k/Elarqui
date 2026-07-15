@@ -198,7 +198,7 @@ namespace ElArqui.API.Controllers
                             IdVenta = reader.GetInt32(0),
                             Estado = reader.GetString(1)
                         };
-                        if (result.Estado == "Anulada")
+                        if (result.Estado == "ANULADA")
                             return Ok(result);
                         else
                             return StatusCode(500, "No se pudo anular la venta");
