@@ -344,6 +344,7 @@ function Ventas() {
 
             {ventaDetalle && (
                 <section className="wrapper detalle-venta">
+                     <button className="agregar-btnn" onClick={() => { setVentaDetalle(null); setBuscarId(""); }}>← Ver todas las ventas</button>
                     <h3>Detalle de la venta #{ventaDetalle.idVenta} ({ventaDetalle.correlativo})</h3>
                     <p>Cliente: {ventaDetalle.nombreCliente || "Consumidor Final"}</p>
                     <p>Fecha: {new Date(ventaDetalle.fecha).toLocaleDateString()}</p>
