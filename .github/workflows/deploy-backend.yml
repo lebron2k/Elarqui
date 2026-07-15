@@ -11,7 +11,7 @@ on:
 env:
   AZURE_WEBAPP_NAME: elArqui-api   # cámbialo por el nombre real en Azure
   AZURE_WEBAPP_PACKAGE_PATH: './publish'
-  DOTNET_VERSION: '9.0.0'   # ajusta a la versión que uses
+  DOTNET_VERSION: '9.0.x'   # ajusta a la versión que uses
 
 jobs:
   build-and-deploy:
