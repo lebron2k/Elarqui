@@ -358,7 +358,7 @@ function Ventas() {
                         </ul>
                     </main>
 
-                    {ventaDetalle.detalles.map((d, index) => (
+                    {ventaDetalle.productos.map((d, index) => (
                         <article className="row producto detalle-venta-tabla" key={index}>
                             <ul>
                                 <li>{d.producto}</li>
