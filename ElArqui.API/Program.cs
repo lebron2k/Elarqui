@@ -27,7 +27,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
     {
-        policy.WithOrigins("https://el-arqui.vercel.app") // puerto de React
+        policy.WithOrigins("https://elarqui-eight.vercel.app") // puerto de React
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
