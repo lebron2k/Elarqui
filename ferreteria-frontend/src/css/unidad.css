@@ -1,4 +1,4 @@
-#unidad-table{width: 70%;
+#unidad-table{width: fit-content;
     max-width: 1000px;
     margin: 20px auto 100px auto;
     background: rgba(255,255,255,.1);
