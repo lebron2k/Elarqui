@@ -18,4 +18,93 @@
         width: 100%;
         padding: 70px 15px 20px 15px;
     }
+
+    /* Barra de botones/búsqueda: apilada y centrada en vez de flotando con márgenes fijos */
+    .toolbar {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .toolbar > * {
+        margin: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filtros-venta {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filtros-venta .agregar-btnn {
+        display: inline-block;
+        width: auto;
+        margin: 4px !important;
+    }
+
+    /* Botones sueltos que usan margin-left fijo para "centrarse" en desktop */
+    .agregar-btnn,
+    #agregar-btnn,
+    #agregar-btnnn,
+    #agregar-btn,
+    .buscarCat {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+        width: 90%;
+        max-width: 320px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Formularios: centrados y sin desbordar la pantalla */
+    .form-producto {
+        width: 90% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box;
+    }
+
+    .form-producto input,
+    .form-producto select,
+    .detalle-linea input,
+    .detalle-linea select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .acciones-form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-guardar,
+    .btn-cancelar,
+    .btn-guardarf,
+    .btn-cancelarf {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    /* Tablas: se centran y hacen scroll horizontal en vez de aplastarse */
+    .wrapper,
+    #categoria-table,
+    #cliente-table,
+    #unidad-table,
+    #inventario-table {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .row ul {
+        min-width: max-content;
+    }
 }

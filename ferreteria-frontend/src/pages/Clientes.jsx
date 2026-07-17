@@ -90,7 +90,7 @@ const handleGuardar = () => {
        
  
     <>
-    <button id="agregar-btnnn" className="agregar-btnn" onClick={handleAgregar}>Agregar Cliente</button>
+    <div className="toolbar"><button id="agregar-btnnn" className="agregar-btnn" onClick={handleAgregar}>Agregar Cliente</button></div>
 
       {mostrarFormulario ? (
         <div className="form-producto">

@@ -109,7 +109,7 @@ useEffect(() => {
     return  (
   <div className="inventario-page">
 
-    <input
+    <div className="toolbar"><input
     type="number"
     value={buscarId}
     onChange={(e) => {
@@ -137,6 +137,7 @@ useEffect(() => {
     ))}
 </select>
 <button className="buscarCat" onClick={handleBuscarCategoria}>Buscar Categoría</button>
+</div>
     
     {loading && <p className="inventario-loading">Cargando...</p>}
     {error   && <p className="inventario-error">Error: {error}</p>}

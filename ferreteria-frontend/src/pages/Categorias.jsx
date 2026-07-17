@@ -77,7 +77,7 @@ function Categorias() {
   return (
  
     <>
-    <button id="agregar-btnn" className="agregar-btnn" onClick={handleAgregar}>Agregar Categoria</button>
+    <div className="toolbar"><button id="agregar-btnn" className="agregar-btnn" onClick={handleAgregar}>Agregar Categoria</button></div>
 
       {mostrarFormulario ? (
         <div className="form-producto">

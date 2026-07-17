@@ -206,6 +206,7 @@ function Ventas() {
 
     return (
         <div>
+            <div className="toolbar">
             <button className="agregar-btnn" onClick={handleAgregar}>Registrar venta</button>
 
             <input
@@ -220,6 +221,7 @@ function Ventas() {
                 id="buscarP"
             />
             <button className="agregar-btnn" id="buscarP" onClick={handleBuscar}>Buscar ID</button>
+            </div>
 
             {mostrarFormulario ? (
                 <div className="form-producto">

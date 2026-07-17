@@ -241,6 +241,7 @@ function Compras() {
 
     return (
         <div>
+            <div className="toolbar">
             <button className="agregar-btnn" onClick={handleAgregar}>Agregar compra</button>
 
             <input
@@ -258,6 +259,7 @@ function Compras() {
             <button className="agregar-btnn" onClick={() => setMostrarProveedores(!mostrarProveedores)}>
                 {mostrarProveedores ? "Ocultar proveedores" : "Gestionar proveedores"}
             </button>
+            </div>
 
             {mostrarProveedores && (
                 <div>

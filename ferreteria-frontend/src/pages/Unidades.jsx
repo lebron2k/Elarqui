@@ -85,7 +85,7 @@ if (loading) return <p>Cargando unidades...</p>;
 
     return(
          <>
-    <button id="agregar-btn" className="agregar-btnn" onClick={handleAgregar}>Agregar Unidad</button>
+    <div className="toolbar"><button id="agregar-btn" className="agregar-btnn" onClick={handleAgregar}>Agregar Unidad</button></div>
 
       {mostrarFormulario ? (
         <div className="form-producto">

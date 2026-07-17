@@ -159,7 +159,7 @@ const handleBuscarCategoria = async () => {
 
   
     return (
-        <div><button className="agregar-btnn" onClick={handleAgregar}>Agregar producto</button>
+        <div><div className="toolbar"><button className="agregar-btnn" onClick={handleAgregar}>Agregar producto</button>
        
     <input
     type="number"
@@ -190,6 +190,7 @@ const handleBuscarCategoria = async () => {
     ))}
 </select>
 <button className="buscarCat" onClick={handleBuscarCategoria}>Buscar Categoría</button>
+</div>
 
         {mostrarFormulario ?(
             <div className="form-producto">
