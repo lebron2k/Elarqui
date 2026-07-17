@@ -2,7 +2,7 @@
     grid-template-columns:
         100px   /* ID */
         200px    /* Producto */
-        200px; /* Acciones */
+        80px; /* Acciones */
 }
 
 #categoria-table{
@@ -11,7 +11,7 @@
     margin: 20px auto 100px auto;
     background: rgba(255,255,255,.1);
     color: rgba(255,255,255,.9);
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     border-radius: 8px;
 }
