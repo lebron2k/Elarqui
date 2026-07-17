@@ -2,7 +2,6 @@
     grid-template-columns:
         100px   /* ID */
         200px    /* Producto */
-       
         200px; /* Acciones */
 }
 
@@ -18,5 +17,5 @@
 }
 
 #agregar-btnn{
-    margin-left: 265px;
+    margin-left: 20px;
 }
