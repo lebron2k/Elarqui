@@ -2,11 +2,11 @@
     grid-template-columns:
         100px   /* ID */
         200px    /* Producto */
-        80px; /* Acciones */
+        200px; /* Acciones */
 }
 
 #categoria-table{
-    width: 50%;
+    width: fit-content;
     max-width: 1000px;
     margin: 20px auto 100px auto;
     background: rgba(255,255,255,.1);
